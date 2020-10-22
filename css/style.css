@@ -1,0 +1,415 @@
+/* ここから下に記載していく */
+
+@charset "utf-8";
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #222222;
+    /* font-family:をいれる  */
+}
+
+.wrap{
+    max-width: 1300px; 
+    margin: auto; 
+}
+
+.text-center{
+    text-align: center;
+    line-height: 1.75;
+}
+
+
+.sbtn{
+    display: block;
+    /* blocklevelboxに変更することでサイズ指定を可能に*/
+    margin: 10px;
+    padding: 1px 0;
+    width: 80px;
+    background-color:grey;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: solid;
+    border-color: grey;
+}
+
+.sbtn:hover{
+    background-color:black;
+    border-color:black;
+}
+
+.cbtn{
+    display: block;
+    /* blocklevelboxに変更することでサイズ指定を可能に*/
+    margin: 10px;
+    padding: 1px 0;
+    width: 80px;
+    background-color:white;
+    color: grey;
+    font-size: 1.4rem;
+    text-decoration: bold;
+    border: solid;
+    border-color: grey;
+}
+
+.cbtn:hover{
+    color:black;
+    border-color:black;
+}
+
+
+.q-container{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.b-container{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1500px;  
+}
+
+.h-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;  
+}
+
+.answer{
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 150px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+/* 以下、チーアカ */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+p{
+    font-size: 16px;
+    color: #222222;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: bold;
+}
+/* hの中にもclassつける .page-titleとか */
+
+h4 {
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.title{
+    margin: 0 0 30px;
+}
+.subtitle{
+    margin: 0 0 60px
+}
+
+
+
+
+/*--------------------------
+---------header--------*/
+.header{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+    margin: 50px 50px 50px 0;
+}
+.nav-item>a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.1rem;
+}
+
+/*--------------------------
+---------hero image--------*/
+
+.hero-image{
+    position: relative;
+    margin: 0 auto 60px;
+}
+.hero-image__text{
+    position: absolute;
+    /* position absoluteをつけるとそのhtmlは浮いた状態になる
+    （下のabout htmlがずれて入ったような形になる）
+    親htmlにposition relativeがついてると、それを土台に指定できる*/
+    top: 50%;
+    left: 50%;
+    /* テキストの左上が親htmlの真ん中に*/
+    transform:translate3d(-50%,-50%,0) ;
+    /* transformは拡大縮小変形、translateは移動のcss property */
+    color: #fff;
+    letter-spacing:0.1em;
+
+}
+
+.hero-image__text-1{
+    margin:0 0 30px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.hero-image__text-2{
+    font-size: 2.5rem;
+}
+
+/*--------------------------
+---------about--------*/
+
+.about_image{
+    width: 100%;
+    display:flex;
+    margin: 80px auto 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text{
+    margin: 0 0 40px;
+}
+
+.course__head{
+    margin: 0 0 60px;
+}
+
+.course__list{
+    display:flex;
+    justify-content: center;
+}
+
+.course__item{
+    width: 50%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course__message1{
+    width: 430px;
+    text-align: left;
+    vertical-align: middle;
+    margin:auto auto auto 50px ;
+    line-height: 1.75;
+}
+
+.course__message2{
+    width: 430px;
+    text-align: left;
+    vertical-align: middle;
+    margin:auto 50px auto auto ;
+    line-height: 1.75;
+}
+
+.course__message_top{
+    margin: 0 0 40px
+}
+
+.course-wrapper{
+    margin: 0 0 60px;
+}
+
+/*--------------------------
+---------news--------*/
+
+.news-wrapper{
+    max-width: 1140px;
+    margin: auto auto 60px;
+}
+
+.news__eycatch{
+    margin: 0 0 30px;
+}
+
+.news__date{
+    margin: 0 0 24px;
+}
+
+.news__text{
+    margin: 0 0 60px;
+}
+
+.news__list{
+    display:flex;
+    justify-content: center;
+}
+
+.news__item{
+    width: 300px;
+    margin: 0 15px;
+    
+}
+
+.news__item:hover{
+    background-color:lemonchiffon;
+}
+
+/*--------------------------
+---------access--------*/
+.access{
+    background-color: #fafafa;
+    padding-top: 60px;
+}
+
+.access-wrapper{
+    margin: 0 auto 60px auto;
+}
+.map{
+    margin: 60px 0 60px 0;
+}
+.access-inner{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0); */
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 0 60px;
+    justify-content: center;
+}
+
+.access-title{
+    width: 300px;
+    /* padding: 8px 64px 8px 16px; */
+    /* justify-content: center;
+    align-items: center; */
+    line-height: 50px;
+    /* border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf; */
+
+}
+
+.access-item{
+    width: 400px;
+    line-height: 50px;
+    /* border-top: solid 1px #bfbfbf;
+    border-left: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+    padding: 8px;  */
+}
+/*--------------------------
+---------form--------*/
+
+
+.form-wrapper{
+    width: 640px;
+    margin: 0 auto 140px auto;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+
+.form-title{
+    width: 160px;
+    padding: 8px 64px 8px 16px;
+    /* justify-content: center;
+    align-items: center; */
+    border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+
+}
+
+.form-item{
+    width: 328px;
+    border-top: solid 1px #bfbfbf;
+    border-left: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+    padding: 8px; 
+}
+
+.checkbox{
+    font-size: 1.2rem;
+    margin: 0 24px 0 0;
+}
+
+.form-parts{
+    box-sizing: border-box;
+    width: 82%;
+    font-size: 1.6rem;
+    padding: 4px;
+}
+
+input[type*="checkbox"]{
+    margin: 0 10px 24px 0;
+    /* appearance: none; */
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    background-color: pink;
+}
+
+input[type*="checkbox"]:checked{
+    background-color: pink;
+}
+.btn-submit{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+}
+
+.contacttext1{
+    margin: 0 0 30px;
+}
+
+
+.contacttext2{
+    margin: 0 0 70px;
+}
+
+/*--------------------------
+---------footer--------*/
+
+
+.footer{
+    background-color: #707070;
+    color: white;
+    padding:30px;
+}
+.footer-cheese{
+    color:orange;
+    font-weight: bold;
+}
+
+/* web上のフォントとってくるのはfont awesomeで検索
+してreset cssの中に入れる */
